@@ -1,7 +1,6 @@
 # Welcome to My Portfolio project
 
 
-
 Follow these steps to run it locally:
 
 
