@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="flex flex-col items-center">
           <div className="mb-8">
             <Avatar className="h-80 w-60 border-4 border-primary">
-              <AvatarImage src="/uploads/abhishekImage.png" alt="Abhishek Kumar Singh" />
+              <AvatarImage src={import.meta.env.BASE_URL+"/uploads/abhishekImage.png"} alt="Abhishek Kumar Singh" />
               <AvatarFallback>Hi, I am Abhishek</AvatarFallback>
             </Avatar>
           </div>
