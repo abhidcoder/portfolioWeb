@@ -22,7 +22,9 @@ Thumbs.db         # Windows
 *.njsproj
 *.sln
 
-
+# Build output
+dist/
+build/
 
 # Test coverage
 coverage/
