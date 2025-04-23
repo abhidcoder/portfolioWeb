@@ -1,3 +1,4 @@
+// vite.config.js
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
@@ -10,20 +11,16 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' && componentTagger(),
+    mode === "development" && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // you don't need to set rollupOptions.input for a single-page app
   build: {
-    outDir: 'dist',                  // your build folder
-    rollupOptions: {
-      input: {
-        main: 'src/main.tsx',        // make sure this matches your actual entry
-      },
-    },
+    outDir: "dist",
   },
-  base: "/portfolioWeb/",       // your GitHub Pages sub‑path
+  base: "/portfolioWeb/",
 }));
