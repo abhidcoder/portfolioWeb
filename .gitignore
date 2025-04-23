@@ -1,0 +1,34 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json # optional: ignore if you want lockfile consistency
+
+# dotenv files
+.env
+.env.*            # .env.development, .env.test, etc.
+
+# OS-specific
+.DS_Store         # macOS
+Thumbs.db         # Windows
+
+# Editor/IDE configs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+
+
+# Test coverage
+coverage/
+
+# Optional: logs or temp files
+logs
+*.log
+*.tmp
+*.bak
